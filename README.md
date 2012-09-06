@@ -1,12 +1,11 @@
 # DigiSporc
 
-> La parodia semplice ed economica della Digispark
+> The simple and economic parody of Digispark
 
-DigiSporc è un mini microcontroller su singola scheda basato sulla famiglia ATtiny25/45/85 – realmente facile da usare e programmare – grazie alla applicazione di una semplice idea:
+DigiSporc is a mini single-board microcontroller for ATtiny25/45/85 family, ***really easy to program and use*** thanks to the application of a simple idea:
 
-**il suo connettore, inserito nel primo* connettore strip femmina di una scheda Arduino Uno o Duemilanove, ha i pin disposti già nella sequenza necessaria per poterne effettuare la programmazione tramite una Arduino in modalità ISP.**
+*its connector, plugged in the first female strip connector  of an Arduino Uno or Duemilanove (from the AREF to the digital port 8), has the pin already arranged in the right sequence to be able to be programmed with ad Arduino in ISP mode.*
 
-*quello da AREF alla porta digitale n.8 per intenderci.
 
 ### ATtiny25/45/85 Microcontroller Pin-Outs
 
@@ -14,24 +13,21 @@ DigiSporc è un mini microcontroller su singola scheda basato sulla famiglia ATt
 
 ### DigiSporc Pin-Outs
 
+![DigiSporc pinouts](https://raw.github.com/MarcoLosurdo/DigiSporc/master/DigiSporc_pinout.png)
 
+## Notes
 
-## Note
+* On the Arduino will run a variation of the sketch "ArduinoISP" specially modified for the DigiSporc, or the original version supplied with the Arduino IDE. But in the latter case it will be necessary to perform manually the connection between the 5V pin of Arduino and DigiSporc to provide the power supply.
 
-* Sulla Arduino dovrà girare la variante dello sketch "ArduinoISP" appositamente modificata per la scheda DigiSporc, oppure, la versione originale fornita con la IDE. Ma in quest'ultimo caso si renderà necessario effettuare manualmente il collegamento fra il pin 5V della scheda Arduino e quello della DigiSporc per fornire l'alimentazione necessaria.
-
-* Per programmare i microcontrollori della famiglia ATtiny25/45/85 occorre inserire nella cartella hardware la apposita libreria [ATtiny](https://github.com/damellis/attiny)) 
+* To program the microcontrollers ATtiny25/45/85, the [ATtiny](https://github.com/damellis/attiny) library should be inserted in the appropriate "hardware" folder on the Arduino IDE working dir.
 
 
 ## Credits
-* Il progetto è basato sul tutorial [Programming an ATtiny w/ Arduino 1.0.1](http://hlt.media.mit.edu/?p=1695) del MIT media lab.
+* The project is based on the tutorial [Programming an ATtiny w/ Arduino 1.0.1](http://hlt.media.mit.edu/?p=1695) by MIT media lab.
 
-* Infiniti ringraziamenti ai ragazzi del [Tokyo Hackerspace](http://tokyohackerspace.org/) per i vari consigli, ma soprattutto per l'inaspettato entusiasmo con cui hanno accolto il progetto.
+* Many thanks to the guys of [Tokyo Hackerspace](http://tokyohackerspace.org/) for any advices, but especially for the unexpected enthusiasm with which they welcomed the project.
 
 
 ## Licence
 (c) 2012, Marco Losurdo  
-This work is realeased under the [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/us/
-) License.
-
-
+This project is realeased under the [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/us/) License.
