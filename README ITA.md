@@ -25,7 +25,7 @@ DigiSporc è un mini microcontroller su singola scheda basato sulla famiglia ATt
 * Infiniti ringraziamenti ai ragazzi del [Tokyo Hackerspace](http://tokyohackerspace.org/) per i vari consigli, ma soprattutto per l'inaspettato entusiasmo con cui hanno accolto il progetto.
 
 ## Licence
-(c) 2012, Marco Losurdo  
+DigiSporc (c) 2012, Marco Losurdo  
 This work is realeased under the [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/us/
 ) License.
 
