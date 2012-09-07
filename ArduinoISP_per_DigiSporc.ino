@@ -1,3 +1,16 @@
+// 7 September 2012 Marco Losurdo                                                                    // DigiSporc - added
+//                                                                                                   // DigiSporc - added
+// WARNING!                                                                                          // DigiSporc - added
+//                                                                                                   // DigiSporc - added
+// This is a version of the sketch "version ArduinoISP 04m3" customized for the DigiSporc.           // DigiSporc - added
+// The lines that differ from the original (distributed with the Arduino IDE) are commented out      // DigiSporc - added
+// in line with:                                                                                     // DigiSporc - added
+// <code> // DigiSporc - added ........... this line of code is not present in the original          // DigiSporc - added
+// <code> // DigiSporc - modified ........ line where the code has been modified                     // DigiSporc - added
+//                                                                                                   // DigiSporc - added
+// The original code starts under this line.                                                         // DigiSporc - added
+
+
 // ArduinoISP version 04m3
 // Copyright (c) 2008-2011 Randall Bohn
 // If you require a license, see 
@@ -13,8 +26,8 @@
 // SCK:         13:               52 
 //
 // Put an LED (with resistor) on the following pins:
-// 5: Heartbeat   - shows the programmer is running                                      // DigiSporc
-// 6: Error       - Lights up if something goes wrong (use red if that makes sense)      // DigiSporc
+// 5: Heartbeat   - shows the programmer is running                                      // DigiSporc - modified
+// 6: Error       - Lights up if something goes wrong (use red if that makes sense)      // DigiSporc - modified
 // 7: Programming - In communication with the slave
 //
 // 23 July 2011 Randall Bohn
@@ -46,8 +59,8 @@
 #include "pins_arduino.h"
 #define RESET     SS
 
-#define LED_HB    5        // DigiSporc
-#define LED_ERR   6        // DigiSporc
+#define LED_HB    5        // DigiSporc - modified
+#define LED_ERR   6        // DigiSporc - modified
 #define LED_PMODE 7
 #define PROG_FLICKER true
 
@@ -55,7 +68,8 @@
 #define SWMAJ 1
 #define SWMIN 18
 
-#define VOLT5 8
+#define VOLT5 8            // DigiSporc - added
+
 
 // STK Definitions
 #define STK_OK      0x10
@@ -76,8 +90,8 @@ void setup() {
   pinMode(LED_HB, OUTPUT);
   pulse(LED_HB, 2);
   
-  pinMode(VOLT5, OUTPUT);       // DigiSporc
-  digitalWrite(VOLT5, HIGH);    // DigiSporc
+  pinMode(VOLT5, OUTPUT);       // DigiSporc - added
+  digitalWrite(VOLT5, HIGH);    // DigiSporc - added
 }
 
 int error=0;
@@ -554,6 +568,3 @@ int avrisp() {
       Serial.print((char)STK_NOSYNC);
   }
 }
-
-
-
