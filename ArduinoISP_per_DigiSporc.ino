@@ -4,7 +4,7 @@
 //                                                                                                   // DigiSporc - added
 // This is a version of the sketch "version ArduinoISP 04m3" customized for the DigiSporc.           // DigiSporc - added
 // The lines that differ from the original (distributed with the Arduino IDE) are commented out      // DigiSporc - added
-// in line with:                                                                                     // DigiSporc - added
+// in that way:                                                                                      // DigiSporc - added
 // <code> // DigiSporc - added ........... this line of code is not present in the original          // DigiSporc - added
 // <code> // DigiSporc - modified ........ line where the code has been modified                     // DigiSporc - added
 //                                                                                                   // DigiSporc - added
