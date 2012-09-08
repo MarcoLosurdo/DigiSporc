@@ -16,7 +16,7 @@ DigiSporc is a mini single-board microcontroller for ATtiny25/45/85 family that 
 ![DigiSporc pinouts](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/DigiSporc_pinout.png)
 
 ## Notes
-* On the Arduino will run a variation of the sketch "ArduinoISP" customized for the DigiSporc, or the original version supplied with the Arduino IDE. But in the latter case it will be necessary to perform manually the connection between the 5V pin of Arduino and DigiSporc to provide the power supply.
+* On the Arduino will run a variation of the sketch [ArduinoISP customized for the DigiSporc](https://raw.github.com/MarcoLosurdo/DigiSporc/master/ArduinoISP_per_DigiSporc.ino), or the original version supplied with the Arduino IDE. But in the latter case it will be necessary to perform manually the connection between the 5V pin of Arduino and DigiSporc to provide the power supply.
 
 * To program the microcontrollers ATtiny25/45/85, the [ATtiny](https://github.com/damellis/attiny) library should be inserted in the appropriate "hardware" folder on the Arduino IDE working dir.
 
