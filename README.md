@@ -32,8 +32,8 @@ The prototype of DigiSporc in that pic, however, has no voltage regulator.
 All you need to build your first DigiSporc (in DigiSporc_Nano configuration) is:
 
 ### 2.1.Hardware
-* 1x 10K resistor
-* 1x 1K resistor
+* 1x 10K resistor (brown, black, orange, gold)
+* 1x 1K resistor (brown, black, red, gold)
 * 2x 0.1uF capacitors (but just one of them will be welded on the board, I promise!)
 * 1x ATtiny85 (or 45)
 * 1x 3mm LED
