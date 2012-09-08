@@ -40,6 +40,8 @@ All you need to build your first DigiSporc (in DigiSporc_Nano configuration) is:
 * 1x 1x8 pin headers (90° or straight)
 * 1x 8x8 matrix board (but also an 8x6 is enough)
 
+![Componenti](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/Lanciami_i_componenti.jpeg)
+
 This tutorial is written by an Italian, so do not expect too many details (I'm not lazy, just don't wanna offend your intelligence).  
 It is obvious that to complete the project you will need a **soldering iron**, some **tin**, an **Arduino** (Duemilanove or Uno) and an **USB cable** too. if you have no idea how to make a circuit on a matrix board: search on Google. The internet is full of tinkering tutorials and I do not want to do another one.  
 Ok, I'm lazy.  
@@ -65,47 +67,33 @@ Take a look at the scheme and do your best, I trust you!
 1. Select your DigiSporc microcontroller from the _Tools > Boards_ menu (e.g. **ATtiny85 8 MHz**);
 1. Select **Arduino as ISP** from the _Tools > Programmer_ menu;  
 ![ArduinoAsISP_menu.png](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/ArduinoAsISP_menu.png)
-1. Plug a 0.1uF capacitor between Arduino's RESET and GND (sometimes it is unnecessary, but it is always better to do);
-1. Plug your DigiSporc into the AREF–DIGITAL8 slot;
+1. Plug a 0.1uF capacitor between Arduino's RESET and GND (sometimes it is unnecessary, but it is always better to do);  
+![DigiSporc_plugged.jpeg](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/capacitor_ResetGND.jpeg)
+1. Plug your DigiSporc into the AREF–DIGITAL8 slot;  
+![DigiSporc_plugged.jpeg](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/DigiSporc_plugged.jpeg)
 1. Run the **Burn Bootloader** command from the Tools menu.  
 ![scrivi_bootloader_menu.png](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/scrivi_bootloader_menu.png)
 
-You need to do this once for every ATtiny.  
+You need to do this **once** for every ATtiny.  
 This doesn’t burn a bootloader onto the ATtiny, just configures the fuse bits of the microcontroller so it runs at 8 MHz.
 
-## 4.Programming the DigiSporc
+## 4.Programming the DigiSporc for the first time
 If you've restarted the Arduino IDE or changed something, repeat the steps from 1 to 6 as above for the ATtiny setup, then:
 
 1. Open the **Blink** sketch from the _File > Examples > Basics_ menu;
 1. Edit the sketch and change the pin numbers from 13 to 0;
 1. Upload the sketch and enjoy your blinking LED (if the LED don't blink, something gone wrong).
 
-## 5.Sporc
-Sporc it's the abbreviation of the italian word "sporco" (dirty).
-
-
-
-
-
-
-### ATtiny25/45/85 Microcontroller Pin-Outs
-
-![ATtiny85 pinouts](http://hlt.media.mit.edu/wp-content/uploads/2011/10/ATtiny45-85.png)
-
-### DigiSporc Pin-Outs
-
-![DigiSporc pinouts](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/DigiSporc_pinout.png)
-
-## Notes
-* On the Arduino will run a variation of the sketch [ArduinoISP customized for the DigiSporc](https://raw.github.com/MarcoLosurdo/DigiSporc/master/ArduinoISP_per_DigiSporc.ino), or the original version supplied with the Arduino IDE. But in the latter case it will be necessary to perform manually the connection between the 5V pin of Arduino and DigiSporc to provide the power supply.
-
+## 6.Notes
+* Oon the Arduino used as ISP programmer, still possible to run  the original version (supplied with the Arduino IDE) of **Arduino ISP**. But will be necessary to perform manually the connection between the 5V pin of Arduino and DigiSporc to provide the power supply.
 * To program the microcontrollers ATtiny25/45/85, the [ATtiny](https://github.com/damellis/attiny) library should be inserted in the appropriate "hardware" folder on the Arduino IDE working dir.
+* **Sporc** it's the abbreviation of the italian word "sporco" (dirty).
 
-## Credits
+## 7.Credits
 * The project is based on the tutorial [Programming an ATtiny w/ Arduino 1.0.1](http://hlt.media.mit.edu/?p=1695) by MIT media lab.
-
 * Many thanks to the guys of [Tokyo Hackerspace](http://tokyohackerspace.org/) for any advices, but especially for the unexpected enthusiasm with which they welcomed the project.
+* I'm sorry not to be able to thank guys DigiSpark, but at the time of publication of my project on Github, they had not yet published nothing of their **open hardware** board... probably, they were too busy to pick up their quarter of a million dollars on KickStarter :D #LOL
 
-## Licence
+## 8.Licence
 DigiSporc (c) 2012, Marco Losurdo  
 This project is realeased under the [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/us/) License.
