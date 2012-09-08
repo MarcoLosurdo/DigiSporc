@@ -2,6 +2,8 @@
 
 > The simple and economic parody of Digispark
 
+![Il Purcello!!!](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/buta.png)
+
 DigiSporc is a mini single-board microcontroller for ATtiny25/45/85 family that is **really easy to program and use** thanks to the application of a simple idea:
 
 *its connector, plugged in the first female strip connector  of an Arduino Uno or Duemilanove (from the AREF to the digital port 8), has the pin already arranged in the right sequence to be able to be programmed with an Arduino in ISP mode.*
