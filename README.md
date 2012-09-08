@@ -85,7 +85,8 @@ This doesn’t burn a bootloader onto the ATtiny, just configures the fuse bits 
 If you've restarted the Arduino IDE or changed something, repeat the steps from 1 to 6 as above for the ATtiny setup, then:
 
 1. Open the **Blink** sketch from the _File > Examples > Basics_ menu;
-1. edit the sketch and change the pin numbers from 13 to 0;
+1. edit the sketch and change the pin numbers from 13 to 0;  
+`int led = 13;` → `int led = 0;`
 1. upload the sketch and enjoy your blinking LED (if the LED don't blinks, something gone wrong).
 
 ## 6.Notes
