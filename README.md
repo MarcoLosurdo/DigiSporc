@@ -45,7 +45,8 @@ All you need to build your first DigiSporc (in DigiSporc_Nano configuration) is:
 ![Componenti](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/Lanciami_i_componenti.jpeg)
 
 This tutorial is written by an Italian, so do not expect too many details (I'm not lazy, just don't wanna offend your intelligence).  
-It is obvious that to complete the project you will need a **soldering iron**, some **tin**, an **Arduino** (Duemilanove or Uno) and an **USB cable** too. if you have no idea how to make a circuit on a matrix board: search on Google. The internet is full of tinkering tutorials and I do not want to do another one.  
+It is obvious that to complete the project you will need a **soldering iron**, some **tin**, an **Arduino** (Duemilanove or Uno) and an **USB cable** too.  
+If you have no idea how to make a circuit on a matrix board: search on Google. The internet is full of tinkering tutorials and I do not want to add another one.  
 Ok, I'm lazy.  
 Take a look at the scheme and do your best, I trust you!
 
@@ -60,13 +61,13 @@ Take a look at the scheme and do your best, I trust you!
 1. Copy the attiny folder from inside the .zip to the **hardware** folder (you should obtain a structure like _Documents/Arduino/hardware/attiny_ that contains the file **boards.txt** and another folder called variants).
 1. Restart the Arduino IDE.
 1. You should see ATtiny entries in the _Tools > Board_ menu.
-![Menu with ATtiny](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/ATtiny-Boards-Menu.png)
 1. The steps are just 5, not 37. I was joking. Move on.
 
 ### 3.ATtiny setup
 1. Select your Arduino from _Tools > Boards_ menu (e.g. **Arduino Uno**) and the right serial port (if you have a problem already at this step, please refer to the [official Arduino IDE guide](http://arduino.cc/en/Guide/HomePage));
 1. Connect and upload [ArduinoISP per DigiSporc](https://raw.github.com/MarcoLosurdo/DigiSporc/master/ArduinoISP_per_DigiSporc.ino) onto your Arduino board;
 1. Select your DigiSporc microcontroller from the _Tools > Boards_ menu (e.g. **ATtiny85 8 MHz**);
+![Menu with ATtiny](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/ATtiny-Boards-Menu.png)
 1. Select **Arduino as ISP** from the _Tools > Programmer_ menu;  
 ![ArduinoAsISP_menu.png](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/ArduinoAsISP_menu.png)
 1. Plug a 0.1uF capacitor between Arduino's RESET and GND (sometimes it is unnecessary, but it is always better to do);  
@@ -87,14 +88,13 @@ If you've restarted the Arduino IDE or changed something, repeat the steps from 
 1. Upload the sketch and enjoy your blinking LED (if the LED don't blink, something gone wrong).
 
 ## 6.Notes
-* Oon the Arduino used as ISP programmer, still possible to run  the original version (supplied with the Arduino IDE) of **Arduino ISP**. But will be necessary to perform manually the connection between the 5V pin of Arduino and DigiSporc to provide the power supply.
-* To program the microcontrollers ATtiny25/45/85, the [ATtiny](https://github.com/damellis/attiny) library should be inserted in the appropriate "hardware" folder on the Arduino IDE working dir.
+* On the Arduino used as ISP programmer, still possible to run  the original version (supplied with the Arduino IDE) of **Arduino ISP**. But will be necessary to manually perform the connection between the 5V pin of Arduino and DigiSporc to provide the power supply.
 * **Sporc** it's the abbreviation of the italian word "sporco" (dirty).
 
 ## 7.Credits
 * The project is based on the tutorial [Programming an ATtiny w/ Arduino 1.0.1](http://hlt.media.mit.edu/?p=1695) by MIT media lab.
-* Many thanks to the guys of [Tokyo Hackerspace](http://tokyohackerspace.org/) for any advices, but especially for the unexpected enthusiasm with which they welcomed the project.
-* I'm sorry not to be able to thank guys DigiSpark, but at the time of publication of my project on Github, they had not yet published nothing of their **open hardware** board... probably, they were too busy to pick up their quarter of a million dollars on KickStarter :D #LOL
+* Many thanks to the people of [Tokyo Hackerspace](http://tokyohackerspace.org/) for any advices, but especially for the unexpected enthusiasm with which they welcomed the project.
+* I’m sorry not to be able to thank guys DigiSpark, but at the time of publication of my project on Github, they had not yet published nothing of their open hardware board… probably, they were too busy to collect their quarter of a million dollars on KickStarter :D #LOL
 
 ## 8.Licence
 DigiSporc (c) 2012, Marco Losurdo  
