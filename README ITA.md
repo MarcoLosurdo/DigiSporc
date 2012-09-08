@@ -12,7 +12,7 @@ DigiSporc è un mini microcontroller su singola scheda basato sulla famiglia ATt
 ![ATtiny85 pinouts](http://hlt.media.mit.edu/wp-content/uploads/2011/10/ATtiny45-85.png)
 
 ### DigiSporc Pin-Outs
-![DigiSporc pinouts](https://raw.github.com/MarcoLosurdo/DigiSporc/master/DigiSporc_pinout.png)
+![DigiSporc pinouts](https://github.com/MarcoLosurdo/DigiSporc/blob/master/pic/DigiSporc_pinout.png)
 
 ## Note
 * Sulla Arduino dovrà girare la variante dello sketch [ArduinoISP modificata per la scheda DigiSporc](https://raw.github.com/MarcoLosurdo/DigiSporc/master/ArduinoISP_per_DigiSporc.ino), oppure, la versione originale fornita con la IDE. Ma in quest'ultimo caso si renderà necessario effettuare manualmente il collegamento fra il pin 5V della scheda Arduino e quello della DigiSporc per fornire l'alimentazione necessaria.
