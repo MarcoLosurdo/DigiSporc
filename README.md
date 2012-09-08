@@ -64,7 +64,7 @@ The internet is full of tinkering tutorials and I do not want to add another one
 1. you should see ATtiny entries in the _Tools > Board_ menu;
 1. the steps are just 5, not 37. I was joking. Move on.
 
-### 3.ATtiny setup
+## 3.ATtiny setup
 1. Connect and select your Arduino from _Tools > Boards_ menu (e.g. **Arduino Uno**) and the right serial port (if you have a problem already at this step, please refer to the [official Arduino IDE guide](http://arduino.cc/en/Guide/HomePage));
 1. connect and upload [ArduinoISP per DigiSporc](https://raw.github.com/MarcoLosurdo/DigiSporc/master/ArduinoISP_per_DigiSporc.ino) onto your Arduino board;
 1. select your DigiSporc microcontroller from the _Tools > Boards_ menu (e.g. **ATtiny85 8 MHz**);
