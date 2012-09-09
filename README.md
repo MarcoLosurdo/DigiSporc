@@ -50,8 +50,7 @@ and all you need to build it is:
 It is always better to avoid solder directly to a microcontroller, and I prefer to use two 1x4 female pin header instead a socket.
 Into the schematic there is a place for another 1x2 female pin but you'll need it if you plan to use the original version of ArduinoISP.
 
-This tutorial was written by an Italian, so do not expect too many details (much less a perfect grammar). I'm not lazy, just don't wanna offend your intelligence.  
-It is obvious that in order to complete the project you will need a **soldering iron**, some **tin wire**, an **Arduino** (Duemilanove or Uno) and an **USB cable** too. 
+This tutorial was written by an Italian, so do not expect too many details (much less a perfect grammar). I'm not lazy, just don't wanna offend your intelligence: it is obvious that in order to complete the project you will need a **soldering iron**, some **tin wire**, an **Arduino** (Duemilanove or Uno) and an **USB cable** too. 
  
 If you have no idea how to read a schematic or to make a circuit on a matrix board: search on Google. The internet is full of tinkering tutorials and I do not want to add another one.
  
