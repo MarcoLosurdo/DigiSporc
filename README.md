@@ -99,6 +99,8 @@ If you've restarted the Arduino IDE or changed something, repeat the steps from 
 
 ## 3.Notes
 * On the Arduino used as ISP programmer, still possible to run  the original version (supplied with the Arduino IDE) of **Arduino ISP**. But will be necessary to manually perform the connection between the 5V pin of Arduino and DigiSporc to provide the power supply;
+* DigiSporc footprint it's 36,84% (175mm^2) less than the best competitor:
+![scrivi_bootloader_menu.png](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/size.png)  
 * **sporc** it's the abbreviation of the italian word "sporco" (dirty).
 
 ## 4.Credits
