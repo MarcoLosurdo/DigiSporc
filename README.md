@@ -31,7 +31,8 @@ The prototype of DigiSporc in that pic, however, has no voltage regulator.
 ![DigiSporc_pinout.png](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/DigiSporc_pinout.png)
 
 ## 2.Getting Started
-This is the DigiSporc_nano:
+This is the DigiSporc Nano:
+
 ![DigiSporc_nano-board.png](https://raw.github.com/MarcoLosurdo/DigiSporc/master/DigiSporc_nano-board.png)  
 and all you need to build it is:
 
