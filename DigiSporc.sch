@@ -11859,8 +11859,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <sheets>
 <sheet>
 <plain>
-<text x="119.38" y="-3.81" size="2.286" layer="94">Tiny Arduino Clone for ATtiny45/85</text>
-<text x="119.38" y="-7.62" size="2.286" layer="94">by Marco</text>
+<text x="119.38" y="-3.81" size="2.286" layer="94">ATtiny45/85 based Arduino Clone</text>
+<text x="119.38" y="-7.62" size="2.286" layer="94">by Marco Losurdo</text>
 <text x="119.38" y="-11.43" size="2.286" layer="94">License CC-BY-SA 3.0</text>
 <text x="210.82" y="-27.94" size="2.286" layer="94">1</text>
 <text x="137.16" y="-27.94" size="2.286" layer="94">The poor cousin of Digispark</text>
