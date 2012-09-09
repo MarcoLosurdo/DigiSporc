@@ -31,7 +31,9 @@ The prototype of DigiSporc in that pic, however, has no voltage regulator.
 ![DigiSporc_pinout.png](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/DigiSporc_pinout.png)
 
 ## 2.Getting Started
-All you need to build your first DigiSporc (in DigiSporc_Nano configuration) is:
+This is the DigiSporc_nano:
+![DigiSporc_nano-board.png](https://raw.github.com/MarcoLosurdo/DigiSporc/master/DigiSporc_nano-board.png)  
+and all you need to build it is:
 
 ### 2.1.Hardware
 * 1x 10K resistor (brown, black, orange, gold)
@@ -44,17 +46,20 @@ All you need to build your first DigiSporc (in DigiSporc_Nano configuration) is:
 
 ![Componenti](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/Lanciami_i_componenti.jpeg)
 
+It is always better to avoid solder directly to a microcontroller, and I prefer to use two 1x4 female pin header instead a socket.
+Into the schematic there is a place for another 1x2 female pin but you'll need it if you plan to use the original version of ArduinoISP.
+
 This tutorial was written by an Italian, so do not expect too many details (much less a perfect grammar). I'm not lazy, just don't wanna offend your intelligence.  
-It is obvious that in order to complete the project you will need a **soldering iron**, some **tin wire**, an **Arduino** (Duemilanove or Uno) and an **USB cable** too.  
-If you have no idea how to read a schematic or to make a circuit on a matrix board: search on Google.  
-The internet is full of tinkering tutorials and I do not want to add another one.
+It is obvious that in order to complete the project you will need a **soldering iron**, some **tin wire**, an **Arduino** (Duemilanove or Uno) and an **USB cable** too. 
+ 
+If you have no idea how to read a schematic or to make a circuit on a matrix board: search on Google. The internet is full of tinkering tutorials and I do not want to add another one.
  
 ...Ok, I'm lazy. Do your best, I trust you!
 
 ### 2.2.Software
 * [Arduino IDE](http://arduino.cc/en/Main/Software).
-* [ATtiny library](https://github.com/damellis/attiny/zipball/Arduino1)
 * My version of [ArduinoISP](https://raw.github.com/MarcoLosurdo/DigiSporc/master/ArduinoISP_per_DigiSporc.ino)
+* [ATtiny hardware support](https://github.com/damellis/attiny/zipball/Arduino1)
 
 #### 2.2.1.Installing ATtiny support in 37 easy steps:
 1. Locate your Arduino sketchbook folder (start **Arduino IDE** and watch in the preferences);
@@ -64,15 +69,18 @@ The internet is full of tinkering tutorials and I do not want to add another one
 1. you should see ATtiny entries in the _Tools > Board_ menu;
 1. the steps are just 5, not 37. I was joking. Move on.
 
-## 3.ATtiny setup
+### 2.3.ATtiny setup
 1. Connect and select your Arduino from _Tools > Boards_ menu (e.g. **Arduino Uno**) and the right serial port (if you have a problem already at this step, please refer to the [official Arduino IDE guide](http://arduino.cc/en/Guide/HomePage));
 1. connect and upload [ArduinoISP per DigiSporc](https://raw.github.com/MarcoLosurdo/DigiSporc/master/ArduinoISP_per_DigiSporc.ino) onto your Arduino board;
 1. select your DigiSporc microcontroller from the _Tools > Boards_ menu (e.g. **ATtiny85 8 MHz**);
 ![Menu with ATtiny](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/ATtiny-Boards-Menu.png)
+
 1. Select **Arduino as ISP** from the _Tools > Programmer_ menu;  
 ![ArduinoAsISP_menu.png](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/ArduinoAsISP_menu.png)
+
 1. plug a 0.1uF capacitor between Arduino's RESET and GND (sometimes it is unnecessary, but it is always better to do);  
 ![DigiSporc_plugged.jpeg](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/capacitor_ResetGND.jpeg)
+
 1. plug your DigiSporc into the AREF–DIGITAL8 slot;  
 ![DigiSporc_plugged.jpeg](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/DigiSporc_plugged.jpeg)
 1. run the **Burn Bootloader** command from the Tools menu.  
@@ -81,7 +89,7 @@ The internet is full of tinkering tutorials and I do not want to add another one
 You need to do this **once** for every ATtiny.  
 This doesn’t burn a bootloader onto the ATtiny, just configures the fuse bits of the microcontroller so it runs at 8 MHz.
 
-## 4.Programming the DigiSporc for the first time
+### 2.4.Programming the DigiSporc for the first time
 If you've restarted the Arduino IDE or changed something, repeat the steps from 1 to 6 as above for the ATtiny setup, then:
 
 1. Open the **Blink** sketch from the _File > Examples > Basics_ menu;
@@ -89,15 +97,15 @@ If you've restarted the Arduino IDE or changed something, repeat the steps from 
 `int led = 13;` → `int led = 0;`
 1. upload the sketch and enjoy your blinking LED (if the LED don't blinks, something gone wrong).
 
-## 6.Notes
+## 3.Notes
 * On the Arduino used as ISP programmer, still possible to run  the original version (supplied with the Arduino IDE) of **Arduino ISP**. But will be necessary to manually perform the connection between the 5V pin of Arduino and DigiSporc to provide the power supply;
 * **sporc** it's the abbreviation of the italian word "sporco" (dirty).
 
-## 7.Credits
+## 4.Credits
 - The project is based on the tutorial [Programming an ATtiny w/ Arduino 1.0.1](http://hlt.media.mit.edu/?p=1695) by MIT media lab.
 - Many thanks to the people of [Tokyo Hackerspace](http://tokyohackerspace.org/) for any advices, but especially for the unexpected enthusiasm with which they welcomed the project.
 - I’m sorry not to be able to thank guys DigiSpark, but at the time of publication of my project on Github, they had not yet published nothing of their "open hardware" board… probably, they were too busy to collect their quarter of a million dollars on KickStarter :D #LOL
 
-## 8.Licence
+## 5.Licence
 DigiSporc (c) 2012, Marco Losurdo  
 This project is realeased under the [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/us/) License.
