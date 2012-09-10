@@ -101,7 +101,8 @@ If you've restarted the Arduino IDE or changed something, repeat the steps from 
 ## 3.Notes
 * On the Arduino used as ISP programmer, still possible to run  the original version (supplied with the Arduino IDE) of **Arduino ISP**. But will be necessary to manually perform the connection between the 5V pin of Arduino and DigiSporc to provide the power supply;
 * DigiSporc footprint it's 36,84% (175mm^2) less than the best competitor:
-![scrivi_bootloader_menu.png](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/size.png)  
+![scrivi_bootloader_menu.png](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/size.png) 
+* OK, the DigiSpark seems to have 6 I/O pin and Digisporc just 5. But remember: less is more! :-?
 * **sporc** it's the abbreviation of the italian word "sporco" (dirty).
 * **I want to clarify explicitly**: The fact that the DigiSporc really works, does not mean that this is a serious project. I just wanted to do something to practice in the use of Github, EagleCad, Markdown and teasing (just a little) who use Kickstarter to raise money for projects that, in reality, are nothing more than other open source projects combined toghether.
 
