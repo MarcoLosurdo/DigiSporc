@@ -103,6 +103,7 @@ If you've restarted the Arduino IDE or changed something, repeat the steps from 
 * DigiSporc footprint it's 36,84% (175mm^2) less than the best competitor:
 ![scrivi_bootloader_menu.png](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/size.png)  
 * **sporc** it's the abbreviation of the italian word "sporco" (dirty).
+* **I want to clarify explicitly**: The fact that the DigiSporc really works, does not mean that this is a serious project. I just wanted to do something to practice in the use of Github, EagleCad, Markdown and teasing (just a little) who use Kickstarter to raise money for projects that, in reality, are nothing more than other open source projects combined toghether.
 
 ## 4.Credits
 - The project is based on the tutorial [Programming an ATtiny w/ Arduino 1.0.1](http://hlt.media.mit.edu/?p=1695) by MIT media lab.
