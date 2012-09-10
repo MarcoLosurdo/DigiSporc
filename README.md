@@ -78,8 +78,9 @@ If you have no idea how to read a schematic or to make a circuit on a matrix boa
 1. Select **Arduino as ISP** from the _Tools > Programmer_ menu;  
 ![ArduinoAsISP_menu.png](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/ArduinoAsISP_menu.png)
 
-1. plug a 0.1uF capacitor between Arduino's RESET and GND (sometimes it is unnecessary, but it is always better to do);  
-![DigiSporc_plugged.jpeg](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/capacitor_ResetGND.jpeg)
+1. plug a 0.1uF **ceramic** capacitor between Arduino's RESET and GND (sometimes it is unnecessary, but it is always better to do);  
+![DigiSporc_plugged.jpeg](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/capacitor_ResetGND.jpeg)  
+You can also use a electrolytic capacitor (10uF), but you have to make sure to plug the negative pin of capacitor (più corto e contrassegnato con una striscia nera sul case del condensatore) onto GND.
 
 1. plug your DigiSporc into the AREF–DIGITAL8 slot;  
 ![DigiSporc_plugged.jpeg](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/DigiSporc_plugged.jpeg)
