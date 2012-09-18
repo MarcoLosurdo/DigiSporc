@@ -1,6 +1,6 @@
 # DigiSporc
 
-> The simple and economic parody of Digispark
+> The simple and cheap parody of Digispark
 
 ![Il Purcello!!!](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/buta.png)
 
