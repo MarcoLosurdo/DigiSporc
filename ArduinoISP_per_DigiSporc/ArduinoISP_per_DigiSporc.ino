@@ -122,13 +122,13 @@ parameter param;
 
 // this provides a heartbeat on pin 9, so you can tell the software is running.
 uint8_t hbval=128;
-int8_t hbdelta=8;
+int8_t hbdelta=2;
 void heartbeat() {
-  if (hbval > 192) hbdelta = -hbdelta;
-  if (hbval < 32) hbdelta = -hbdelta;
+  if (hbval > 240) hbdelta = -2;
+  if (hbval < 20)  hbdelta =  2;
   hbval += hbdelta;
   analogWrite(LED_HB, hbval);
-  delay(20);
+  delay(25);
 }
 
 
