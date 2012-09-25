@@ -31,7 +31,7 @@ The prototype of DigiSporc in that pic, however, has no voltage regulator.
 ![DigiSporc_pinout.png](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/DigiSporc_pinout.png)
 
 ## 2.Getting Started
-This is the DigiSporc Nano ([schematics](https://raw.github.com/MarcoLosurdo/DigiSporc/master/DigiSporc_nano.png)):
+This is the DigiSporc Nano ([schematics](https://raw.github.com/MarcoLosurdo/DigiSporc/master/DigiSporc_nano.png)):  
 ![DigiSporc_nano-board.png](https://raw.github.com/MarcoLosurdo/DigiSporc/master/DigiSporc_nano-board.png)  
 and all you need to build it is:
 
@@ -79,7 +79,7 @@ If you have no idea how to read a schematic or to make a circuit on a matrix boa
 
 1. plug a 0.1uF **ceramic** capacitor between Arduino's RESET and GND (sometimes it is unnecessary, but it is always better to do);  
 ![DigiSporc_plugged.jpeg](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/capacitor_ResetGND.jpeg)  
-You can also use a electrolytic capacitor (10uF), but you have to make sure to plug the negative pin of capacitor (più corto e contrassegnato con una striscia nera sul case del condensatore) onto GND.
+You can also use a electrolytic capacitor (10uF), but you have to make sure to plug the negative pin of capacitor (shorter and marked with a black stripe on the case of the capacitor) onto GND.
 
 1. plug your DigiSporc into the AREF–DIGITAL8 slot;  
 ![DigiSporc_plugged.jpeg](https://raw.github.com/MarcoLosurdo/DigiSporc/master/pic/DigiSporc_plugged.jpeg)
