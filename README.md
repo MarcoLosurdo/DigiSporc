@@ -58,7 +58,7 @@ If you have no idea how to read a schematic or to make a circuit on a matrix boa
 ### 2.2.Software
 * [Arduino IDE](http://arduino.cc/en/Main/Software).
 * My version of [ArduinoISP](https://raw.github.com/MarcoLosurdo/DigiSporc/master/ArduinoISP_per_DigiSporc.ino)
-* [ATtiny hardware support](https://github.com/damellis/attiny/zipball/Arduino1)
+* [ATtiny hardware support](https://github.com/damellis/attiny/archive/master.zip)
 
 #### 2.2.1.Installing ATtiny support in 37 easy steps:
 1. Locate your Arduino sketchbook folder (start **Arduino IDE** and watch in the preferences);
